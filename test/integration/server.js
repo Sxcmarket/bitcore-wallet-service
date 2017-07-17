@@ -7511,11 +7511,11 @@ describe('Wallet service', function() {
       });
     });
     it('should get wallet from tx proposal', function(done) {
-      helpers.stubUtxos(server, wallet, '1 btc', function() {
+      helpers.stubUtxos(server, wallet, '1 sxc', function() {
         helpers.stubBroadcast();
         var txOpts = {
           outputs: [{
-            toAddress: '18PzpUFkFZE8zKWUPvfykkTxmB9oMR8qP7',
+            toAddress: 'SBM1eYmUK8HUdifZYq4SB5weDsKTkwnkrV',
             amount: 1000e2
           }],
           feePerKb: 100e2,
